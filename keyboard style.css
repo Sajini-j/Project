@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.keys{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0;
+}
+button{
+    flex: 1;
+    margin: 5px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 10px black, -2px -2px 5px white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+button:active{
+    box-shadow: 2px 2px 5px white,-2px -2px 5px black ;
+}
+.tab{
+    flex: 2; 
+}
+.caps{
+    flex: 2.5;
+}
+.shift{
+    flex: 3; 
+}
+.space { flex: 10; }
+.alt, .ctrl, .fn, .win, .back {
+     flex: 1.5;
+     }
+..tab, .caps, .shift, .ctrl, .fn, .win, .alt, .space, .enter, .back {
+    font-size: 12px;
+}
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    button {
+        font-size: 12px;
+        padding: 6px;
+        margin: 3px;
+    }
+}
